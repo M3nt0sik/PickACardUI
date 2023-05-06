@@ -16,11 +16,15 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <StackPanel VerticalAlignment="Center" Margin="20,20,20,20" HorizontalAlignment="Center">
-          <Label Content="Ile kart wylosować" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20"/>
+            <Label Content="Ile kart wylosować" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20"/>
             <Slider Width="170" Foreground="Black" Maximum="15" Minimum="1" Value="1" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
 
         </StackPanel>
-        
+        <ListBox Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="10,10,10,10" Grid.RowSpan="2" Margin="20,20,20,20" FontSize="20" Width="240">
+            <ListBoxItem Content="No card drawn yet!" Selected="ListBoxItem_Selected"/>
+        </ListBox>
+        <Button Content="Losuj Karty!!!" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="22"/>
+
 
     </Grid>
 </Window>

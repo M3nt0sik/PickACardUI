@@ -24,5 +24,10 @@ namespace PickACardUI
         {
             InitializeComponent();
         }
+
+        private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
