@@ -21,7 +21,7 @@
 
         </StackPanel>
         <ListBox x:Name="myListBox" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="10,10,10,10" Grid.RowSpan="2" Margin="20,20,20,20" FontSize="20" Width="250" Height="220" >
-        <ListBoxItem x:Name="Item" Content="No card drawn yet!" Width="220" Height="220" />
+        <ListBoxItem x:Name="Item" Content="No card drawn yet!"  />
         </ListBox>
         <Button Content="Losuj Karty!!!" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="22" Click="Button_Clicked"/>
 
