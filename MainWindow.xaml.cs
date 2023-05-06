@@ -25,9 +25,17 @@ namespace PickACardUI
             InitializeComponent();
         }
 
-        private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
+        private void Button_Clicked(object sender, RoutedEventArgs e)
         {
-
+            int s = (int)slider.Value;
+            string[] list = CardPicker.PickSomeCards(s);
+            myListBox.Items.Clear();
+            foreach(string item in list)
+            {
+             myListBox.Items.Add(item);
+            }
         }
+
+        
     }
 }
